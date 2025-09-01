@@ -44,7 +44,14 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
 }
-
+/* Styles spécifiques aux écrans ≤ 768px (tablette & mobile) */
+@media (max-width: 768px) {
+    .schedule-table-container {
+        width: 100%;              /* prend toute la largeur */
+        flex-direction: column;   /* en colonne sur mobile */
+        overflow-x: auto;         /* scroll horizontal si besoin */
+    }
+}
 .with-border {
   border-left: 1px solid #ddd;
 }
